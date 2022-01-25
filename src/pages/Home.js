@@ -7,18 +7,18 @@ import Navigation from './Navigation';
 
 function Home() 
 {
-    let [text, setText] = React.useState('');
-    fetch("http://localhost:1111/testAPI/",{
-        method: 'GET',
-        // mode: 'cors',
-        headers: {
-            'Access-Control-Allow-Origin':'*',
-            'Content-Type': 'application/json'
-        }
-    }).then(res => res.text()).then(data => {
-        console.log(data);
-    });
-
+    // let [text, setText] = useState('');
+    // fetch("http://localhost:1111/testAPI/",{
+    //     method: 'GET',
+    //     // mode: 'cors',
+    //     headers: {
+    //         'Access-Control-Allow-Origin':'*',
+    //         'Content-Type': 'application/json'
+    //     }
+    // }).then(res => res.text()).then(data => {
+    //     console.log(data);
+    // });
+    let text = "";
     return (
         <>
             <Navigation></Navigation>

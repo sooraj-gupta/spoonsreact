@@ -34,7 +34,4 @@ function Gallery( props )
     )
 }
 
-let styles = {
-}
-
 export default Gallery;
