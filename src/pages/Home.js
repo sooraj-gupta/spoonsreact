@@ -1,23 +1,29 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import Card from './Card';
 import data from '../data/data.js';
+import Navigation from './Navigation';
 
 
 function Home() 
 {
+    let [text, setText] = React.useState('');
+    fetch("http://localhost:1111/testAPI/",{
+        method: 'GET',
+        // mode: 'cors',
+        headers: {
+            'Access-Control-Allow-Origin':'*',
+            'Content-Type': 'application/json'
+        }
+    }).then(res => res.text()).then(data => {
+        console.log(data);
+    });
+
     return (
         <>
-            <div className = "hero"> 
-                <div className = "nav">
-                    <h1>spoons</h1>
-                </div>
-                <div className = "content">
-                    <input placeholder="Search for food..." />
-                </div>
-            </div>
+            <Navigation></Navigation>
             <div className = "section">
-                <h2 className = "medium">restaurants</h2>
+                <h2 className = "medium">restaurants {text}</h2>
                 <div className = "filters">
                     <span className = "button"></span>
                 </div>

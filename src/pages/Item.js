@@ -1,5 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import Button from "../components/Button.js";
+import Gallery from "../components/Gallery.js";
 import data from '../data/data.js';
 import Navigation from "./Navigation.js";
 
@@ -13,8 +15,7 @@ function Item( props )
             <Navigation></Navigation>
             <div className = "section">
                 <div className = "item-header">
-                    <div className="image" style = {{ backgroundImage: `url('${item.thumbnail}')` }}>
-                    </div>
+                    <Gallery thumbnail = {item.thumbnail} photos = {item.photos}></Gallery>
                     <h1>{item.name}</h1>
                     <p className="rating">
                         <span style = {{ 
@@ -25,6 +26,7 @@ function Item( props )
 
                         }}>{item.rating}</span> {stars}
                     </p>
+                    <Button>get directions</Button>
                 </div>
             </div>
         </>

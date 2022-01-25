@@ -1,0 +1,18 @@
+.galleryImage
+{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.galleryImage:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}

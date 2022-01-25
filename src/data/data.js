@@ -4,6 +4,11 @@ let data = [
         "name": "La Cueva",
         "rating": "5.0",
         "thumbnail": "https://cdn.usarestaurants.info/assets/uploads/b0aed096bb987fc9aba6e906227fce60_-united-states-california-santa-clara-county-saratoga-503753-la-cuevahtm.jpg",
+        "photos": [
+            "http://2.bp.blogspot.com/-jWdAytTjU0o/Tl6WYQYkHEI/AAAAAAAAAFU/rLb9QK8NWfA/s1600/028_la-cueva_saratoga_carnitas_nachos.jpg",
+            "https://cdn.usarestaurants.info/assets/uploads/b0aed096bb987fc9aba6e906227fce60_-united-states-california-santa-clara-county-saratoga-503753-la-cuevahtm.jpg",
+            "https://fastly.4sqi.net/img/general/600x600/HCU2HXZ1VY4GLCZOOVQTD3AYPC4TSAIL045NNJD5ONNFRE05.jpg",
+        ],
         "tags": "Mexican, Dine In",
         "price": "$$",
         "distance": "",
