@@ -14,7 +14,7 @@ function Item( props )
     let stars = (<></>);
     for( let i = 0; i < item.rating; i++ )
     {
-        stars = (<>{stars}<img src = {spoon} width="15"/></> );
+        stars = (<>{stars}<img src = {spoon} alt="" width="15"/></> );
     }
     for( let i = 0; i < (5 - item.rating); i++ )
     {
